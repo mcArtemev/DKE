@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    background-color: #adb5bd;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #fff;
+    width: 100vw;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+header nav .logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin: 0px 10px 0px 10px;
+}
+
+header nav ul li:last-child {
+    margin: 0px 0px 0px 10px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    
+}
+
+header .user {
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 0.5vw;
+}
+
+header .user span {
+    margin: 0px 5px 0px 5px;
+    font-weight: 600;
+}
+
+header .bg_dark {
+    position: absolute;
+    height: 638px;
+    width: 100vw;
+}
+
+section .split {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+    margin-top: 3vw;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+section .split h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+}
+
+section .split .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: wrap;
+}
+
+section .split .shop .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .split .shop .item .name {
+    display: flex;
+    font-weight: 600;
+    margin: 5px;
+}
+
+section .split .shop .item .desc {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+section .recycle {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    background-color: #fff;
+    width: 100vw;
+    margin-top: 20vw;
+}
+
+footer .few {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .few ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 30%;
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer .few ul li {
+    margin: 10px;
+}
+
+footer .few .map {
+    display: flex;
+    width: 70%!important;
+}
+
+@media screen and (max-width: 1000px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+
+    header .user {
+        justify-content: center;
+    }
+
+    footer .few {
+        flex-direction: column;
+    }
+
+    footer .few ul {
+        width: 100%;
+    }
+}

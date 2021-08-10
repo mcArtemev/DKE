@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <meta name="description" content="Sport Rocket - это спортивный магазин качественного инвентаря для фитнеса, летних и зимних видов спорта, а также товаров для активного отдыха. В магазине и на нашем сайте Вы найдете тренажеры, спортивную одежду и обувь на любой сезон." />
+    <meta name="keywords" content="Спорт, одежда, обувь, кроссовки, фитнес, активный отдых, футболки" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"><img src="img/logo.png" height="100px" width="270px" alt="logo" /></div>
+            <ul>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/about.html">О нас</a</li>
+                <li><a href="#shop">Каталог</a></li>
+                <li><a href="/delivery.html">Доставка и оплата</a></li>
+                <li><a href="/friendships.html">Сотрудничество</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="user container">В вашей корзине: <span id="count_items">0</span> шт на сумму <span id="sum_count">0</span> <i class="fas fa-ruble-sign"></i></div>
+    </header>
+    <section class="container">
+        <div class="split banners">
+            <!-- banners -->
+            <div class="row">
+                <div class="col-lg-12">
+                    Акции и предложения отсутствуют
+                </div>
+            </div>
+        </div>
+        <div class="split list" id="shop">
+            <h3>Каталог</h3>
+            <div class="row recycle">
+                <div class="col-lg-12 shop">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contacts">
+        <div class="few">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Соцсети</a></li>
+            </ul>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143841.93083504448!2d37.47153861341494!3d55.714538055084226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a0c907b721d%3A0xff30efdbf10ca28c!2sPerformance%20Sport!5e0!3m2!1sen!2sru!4v1628583969156!5m2!1sen!2sru" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let json_items = {
+                "product": [
+                    {
+                        "name": "Белая Футболка",
+                        "img": "img/content/white-shirt.png",
+                        "description": "Свитшот поможет создать современный спортивный образ. НАТУРАЛЬНЫЕ МАТЕРИАЛЫ: Смесовый материал с преобладанием хлопка в составе обеспечивает комфорт и оптимальный воздухообмен. КОМФОРТНАЯ ПОСАДКА: Прямой крой для максимально удобной посадки.",
+                        "price": "1100"
+                    },
+                    {
+                        "name": "Голубая Футболка",
+                        "img": "img/content/blue-shirt.png",
+                        "description": "Свитшот поможет создать современный спортивный образ. НАТУРАЛЬНЫЕ МАТЕРИАЛЫ: Смесовый материал с преобладанием хлопка в составе обеспечивает комфорт и оптимальный воздухообмен. КОМФОРТНАЯ ПОСАДКА: Прямой крой для максимально удобной посадки.",
+                        "price": "2200"
+                    },
+                    {
+                        "name": "Красная Футболка",
+                        "img": "img/content/red-shirt.png",
+                        "description": "Свитшот поможет создать современный спортивный образ. НАТУРАЛЬНЫЕ МАТЕРИАЛЫ: Смесовый материал с преобладанием хлопка в составе обеспечивает комфорт и оптимальный воздухообмен. КОМФОРТНАЯ ПОСАДКА: Прямой крой для максимально удобной посадки.",
+                        "price": "3300"
+                    },
+                    {
+                        "name": "Кепка",
+                        "img": "img/content/cap.jpg",
+                        "description": "Бейсболка, выполненная из солнцезащитного материала, - отличный выбор для летнего активного отдыха. Технология Omni-Shade (UPF 50) надежно защищает от воздействия солнечных лучей. Для комфортной посадки модель регулируется по объему.",
+                        "price": "4400"
+                    },
+                    {
+                        "name": "Сумка Шоппер",
+                        "img": "img/content/shoper.png",
+                        "description": "Многоразовая экосумка из спанбонда создана, чтобы поддержать мировой экологический тренд — отказ от пластиковых пакетов и переход к использованию бумажных. Сумка не только экологичная, но и удобная — в модель размером 40х32х15 см поместятся все покупки. Позаботимся об окружающей среде вместе!",
+                        "price": "5500"
+                    },
+                    {
+                        "name": "Спортивная Сумка",
+                        "img": "img/content/bag.png",
+                        "description": "Многоразовая экосумка из спанбонда создана, чтобы поддержать мировой экологический тренд — отказ от пластиковых пакетов и переход к использованию бумажных. Сумка не только экологичная, но и удобная — в модель размером 40х32х15 см поместятся все покупки. Позаботимся об окружающей среде вместе!",
+                        "price": "6600"
+                    }
+                ]
+            }
+
+
+            let generate_items = ``
+
+            json_items.product.forEach((item, index) => {
+                let desc = item.description.substr(0, (item.description.length / 2))
+                desc += "..."
+                generate_items += `<div class="col-lg-3">
+                    <div class="item m-4">
+                        <div class="image" style="background: url('${item.img}') no-repeat; background-size: 100%; height: 250px; width: 250px;"></div>
+                        <div class="name">${item.name}</div>
+                        <div class="desc">${desc}</div>
+                        <div class="price">${item.price} РУБ.</div>
+                        <div class="actions"><button class="btn btn-primary item-buy" data-id="${index}" data-name="${item.name}" data-price="${item.price}"><i class="fas fa-shopping-cart"></i> Купить</button></div>
+                    </div>
+                </div>`
+            })
+
+            $('.shop').html(generate_items)
+
+            var shop = [], shop_count = 0, shop_sum = 0
+
+            function addItemShop(data) {
+                shop_count++
+                shop.push({"id": data[0], "name":data[1], "price": data[2]})
+                console.log(shop)
+                shop_sum += data[2]
+                $('#count_items').text(shop_count)
+                $('#sum_count').text(shop_sum)
+            }
+
+            $('.item-buy').on('click', function() {
+                let id = $(this).data('id')
+                let name = $(this).data('name')
+                let price = $(this).data('price')
+                addItemShop([id, name, price])
+            })
+
+            
+        })
+    </script>
+</body>
+</html>
